@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "fightpreset",
+	"version": "${version}",
+	"name": "Fight Preset",
+	"description": "Inventar-Presets mit Ghost-Items und gruen/rot-Markierung direkt im Inventar.",
+	"authors": [],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"de.fightpreset.FightPresetClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "fightpreset.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
